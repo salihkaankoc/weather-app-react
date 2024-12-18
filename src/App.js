@@ -10,7 +10,7 @@ function App() {
   const fetchForecast = async () => {
     try{
       setError(null);
-      const API_KEY = "cdeeebc8740002b2168d83479cade202";
+      const API_KEY = "yourapikey";
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_KEY}`
       );
